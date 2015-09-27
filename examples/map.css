@@ -10,3 +10,7 @@ html, body {
 	bottom: 0;
 	width: 100%;
 }
+
+.leaflet-container {
+    background: #fff;
+}

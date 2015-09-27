@@ -66,7 +66,6 @@
 
 		_animate: function(svgElement) {
 			var svgDoc = svgElement;
-
 			var lefteye = svgDoc.getElementsByTagName("circle")[0];
 			var righteye = svgDoc.getElementsByTagName("circle")[1];
 
@@ -83,10 +82,11 @@
 
 				// eyes <embed> bounding box to mouse xy deltas
 				// eyes are approx. 23% from left/right corners on half height
-				var deltaToMouseLx = mouseEvt.clientX-(boundaries.x+boundaries.width*0.23);
-				var deltaToMouseLy = mouseEvt.clientY-(boundaries.y+boundaries.height/2);
-				var deltaToMouseRx = mouseEvt.clientX-(boundaries.x+boundaries.width*0.77);
-				var deltaToMouseRy = mouseEvt.clientY-(boundaries.y+boundaries.height/2);
+				var deltaToMouseLx = mouseEvt.clientX-(boundaries.left+boundaries.width*0.23);
+				var deltaToMouseLy = mouseEvt.clientY-(boundaries.top+boundaries.height/2);
+				var deltaToMouseRx = mouseEvt.clientX-(boundaries.left+boundaries.width*0.77);
+				var deltaToMouseRy = mouseEvt.clientY-(boundaries.top+boundaries.height/2);
+
 				// angle from dom elem corner to mouse
 				var angleToMouseL = Math.atan2(deltaToMouseLy, deltaToMouseLx);
 				var angleToMouseR = Math.atan2(deltaToMouseRy, deltaToMouseRx);
