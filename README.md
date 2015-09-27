@@ -1,5 +1,9 @@
 # Leaflet.GooglyEyes
 
+Add googly eyes to your Leaflet maps.
+
+![Small screenshot](images/an-image.jpg)
+
 Inspired by "[If countries had googly eyes](https://www.reddit.com/r/mapporncirclejerk/comments/3l7j8z/if_countries_had_googly_eyes/)".
 
 ## Usage
